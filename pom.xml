@@ -8,6 +8,14 @@
     <name>kloutapi</name>
     <url>https://github.com/thiagoncc/kloutapi</url>
 
+    <!-- $ mvn -DperformRelease=true clean deploy -->
+    <distributionManagement>
+        <repository>
+            <id>gh-pages</id>
+            <url>file:///${basedir}/../kloutapi-pages/repository/</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.json</groupId>
