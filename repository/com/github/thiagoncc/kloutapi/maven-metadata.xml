@@ -3,9 +3,11 @@
   <groupId>com.github.thiagoncc</groupId>
   <artifactId>kloutapi</artifactId>
   <versioning>
+    <release>0.1</release>
     <versions>
+      <version>0.1</version>
       <version>0.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20110323172434</lastUpdated>
+    <lastUpdated>20110323173924</lastUpdated>
   </versioning>
 </metadata>
