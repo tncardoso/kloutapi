@@ -7,7 +7,7 @@
     <version>0.1</version>
     <name>kloutapi</name>
     <url>https://github.com/thiagoncc/kloutapi</url>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <!-- $ mvn -DperformRelease=true clean deploy -->
     <distributionManagement>
