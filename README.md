@@ -21,6 +21,12 @@ Retrieving klout scores is easy as:
         System.out.println(u);
     }
 
+Implemented methods
+-------
+
+* Score: klout
+* User: show
+
 Installation Guide
 -------
 
