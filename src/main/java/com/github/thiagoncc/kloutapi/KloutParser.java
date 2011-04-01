@@ -34,11 +34,11 @@ public class KloutParser
      * 
      * @param json
      *            content of the klout response
-     * @return list containing users and respective klout scores
+     * @return list containing klout score pairs
      * @throws JSONException
      * @throws KloutException
      */
-    public static List<KloutUser> klout(String json)
+    public static List<KloutScorePair> klout(String json)
         throws JSONException,
             KloutException
     {
@@ -47,15 +47,13 @@ public class KloutParser
         int status = respJson.getInt("status");
         if (status != 200) { throw new KloutException("Status error: " + status); }
 
-        List<KloutUser> ret = new Vector<KloutUser>();
+        List<KloutScorePair> ret = new Vector<KloutScorePair>();
         JSONArray usersScore = respJson.getJSONArray("users");
         for (int i = 0; i < usersScore.length(); i++)
         {
             JSONObject cUser = usersScore.getJSONObject(i);
-            KloutUser ku = new KloutUser();
-            ku.setTwitterScreenName(cUser.getString("twitter_screen_name"));
-            ku.setKscore(cUser.getDouble("kscore"));
-            ret.add(ku);
+            KloutScorePair ksp = new KloutScorePair(cUser.getString("twitter_screen_name"), cUser.getDouble("kscore"));
+            ret.add(ksp);
         }
         return ret;
     }

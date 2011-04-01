@@ -37,7 +37,7 @@ public class KloutParserTest
             KloutException
     {
         String json = "{\"status\":200,\"users\":[{\"twitter_screen_name\":\"lfmendes\",\"kscore\":39.77},{\"twitter_screen_name\":\"tncardoso\",\"kscore\":94}]}";
-        List<KloutUser> ret = KloutParser.klout(json);
+        List<KloutScorePair> ret = KloutParser.klout(json);
 
         Assert.assertEquals(ret.get(0).getTwitterScreenName(), "lfmendes");
         Assert.assertEquals(ret.get(0).getKscore(), 39.77, 0.0000001);

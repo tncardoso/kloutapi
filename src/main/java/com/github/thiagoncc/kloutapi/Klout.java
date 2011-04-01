@@ -64,7 +64,7 @@ public class Klout
      * @param users
      *            List containing users screen names.
      */
-    public List<KloutUser> klout(List<String> users)
+    public List<KloutScorePair> klout(List<String> users)
         throws KloutException
     {
         try
@@ -96,11 +96,11 @@ public class Klout
      * @return retrieved klout score.
      * @throws KloutException
      */
-    public KloutUser klout(String user) throws KloutException
+    public KloutScorePair klout(String user) throws KloutException
     {
         LinkedList<String> userlist = new LinkedList<String>();
         userlist.add(user);
-        List<KloutUser> ret = klout(userlist);
+        List<KloutScorePair> ret = klout(userlist);
         return ret.get(0);
     }
 
