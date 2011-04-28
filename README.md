@@ -39,7 +39,7 @@ or install the following repository and dependency in your pom.xml:
         <repository>
           <id>kloutapi-repo</id>
           <name>kloutapi repository on GitHub</name>
-          <url>http://thiagoncc.github.com/kloutapi/repository/</url>
+          <url>http://tncardoso.github.com/kloutapi/repository/</url>
         </repository>
     </repositories>
 
