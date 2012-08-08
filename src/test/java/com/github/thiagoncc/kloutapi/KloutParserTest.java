@@ -23,6 +23,11 @@ import org.json.JSONException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.github.tncardoso.kloutapi.KloutException;
+import com.github.tncardoso.kloutapi.KloutParser;
+import com.github.tncardoso.kloutapi.KloutScorePair;
+import com.github.tncardoso.kloutapi.KloutUser;
+
 public class KloutParserTest
 {
     /**

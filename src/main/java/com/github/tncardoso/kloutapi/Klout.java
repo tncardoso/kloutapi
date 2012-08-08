@@ -15,7 +15,7 @@
  * permissions and limitations under the License.
  */
 
-package com.github.thiagoncc.kloutapi;
+package com.github.tncardoso.kloutapi;
 
 import java.io.IOException;
 import java.util.HashMap;

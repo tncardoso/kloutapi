@@ -16,7 +16,7 @@
 
  */
 
-package com.github.thiagoncc.kloutapi;
+package com.github.tncardoso.kloutapi;
 
 import java.io.BufferedReader;
 import java.io.IOException;

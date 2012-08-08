@@ -16,7 +16,7 @@
 
  */
 
-package com.github.thiagoncc.kloutapi;
+package com.github.tncardoso.kloutapi;
 
 public class KloutException extends Exception
 {
